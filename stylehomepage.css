@@ -95,6 +95,9 @@ background-color: whitesmoke;
     color: black !important; /* Change button color when scrolled */
    }
 
+   .navbar.scrolled .imagenavfirstlogo{
+    filter: invert(100%);
+   }
   .nav-link.dropdown-toggle::after {
       display: none;
   }
