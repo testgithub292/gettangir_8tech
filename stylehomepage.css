@@ -578,11 +578,11 @@ background-color: whitesmoke;
 }
 
 .section10Heading{
-  font-size: 18px;
+  font-size: 22px;
   text-align: left !important;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  margin-top: 300px;
+  margin-top: 250px;
   color: white;
   padding-left: 10px;
 }
@@ -591,7 +591,7 @@ background-color: whitesmoke;
   text-align: center;
 }
 .section10p{
-  font-size: 35px !important;
+  font-size: 18px !important;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
  padding-left: 10px;
@@ -600,7 +600,7 @@ background-color: whitesmoke;
 }
 
 .section10pbult{
-  font-size: 17px;
+  font-size: 18px;
   padding-right: 5px;
   font-family: 'Times New Roman', Times, serif;
   text-align: left !important;
@@ -608,7 +608,7 @@ background-color: whitesmoke;
 }
 
 .section10psecond{
-  font-size: 35px !important;
+  font-size: 18px !important;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
  padding-left: 10px;
@@ -617,7 +617,7 @@ background-color: whitesmoke;
  
 }
 .section10psecondcard4{
-  font-size: 26px !important;
+  font-size: 18px !important;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
  padding-left: 10px;
@@ -780,7 +780,7 @@ background-color: whitesmoke;
   color: black;
   font-size: 30px;
   margin-top: 40px;
- width: 80%;
+
 }
 
 .ninesectiontext{
