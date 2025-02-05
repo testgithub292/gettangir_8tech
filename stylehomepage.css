@@ -399,16 +399,16 @@ background-color: whitesmoke;
 /*----------------------------------------*/
 
 #fourthsection{
-  margin-top: 100px;
+
   text-align: justify;
-  max-width: 1000px;
+ 
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 .fourthsectionheading{
   font-size: 35px;
-  color: black;
+  color:#3a0ca3;
   font-family: 'Times New Roman', Times, serif;
 }
 .fourthsectioncontent{
