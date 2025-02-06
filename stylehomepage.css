@@ -268,7 +268,9 @@ background-color: whitesmoke;
  
 }
 
-
+.firstsectionsecondline{
+  font-size: 25px;
+}
 
 
 
@@ -285,7 +287,7 @@ background-color: whitesmoke;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 50px;
-  margin-top: 70px;
+  margin-top: 90px;
   border: 2px solid #cc2eb2; /* Border to match hover effect */
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
 }
@@ -323,11 +325,12 @@ background-color: whitesmoke;
 }
 
 @media (max-width: 450px) {
-  .hero_firstsection {
-    margin-top: 10px;
-  }
+ 
+.firstsectionsecondline{
+  font-size: 20px;
+}
   .btnfirstsection {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
