@@ -257,7 +257,7 @@ background-color: whitesmoke;
 }
 
 .content_firstsection {
-  max-width: 800px;
+  max-width: 600px;
   position: relative;
 }
 
@@ -309,7 +309,7 @@ background-color: whitesmoke;
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero_firstsection {
-      height: 70vh;
+      height: 100vh;
       padding-left: 10px;
       text-align: center;
       justify-content: center;
@@ -321,6 +321,15 @@ background-color: whitesmoke;
       font-size: 1rem;
   }
 }
+
+@media (max-width: 450px) {
+  .hero_firstsection {
+    margin-top: 10px;
+  }
+
+}
+
+
 /*-----------------------------------------------*/
 
 
