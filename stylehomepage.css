@@ -354,14 +354,14 @@ background-color: whitesmoke;
 
 @media (max-width: 450px) {
   .second_section{
-    font-size: 20px;
+    font-size: 25px;
   }
   
 }
 
 @media (max-width: 400px) {
   .second_section{
-    font-size: 18px;
+    font-size: 22px;
   }
   
 }
