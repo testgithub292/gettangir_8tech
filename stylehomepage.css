@@ -397,6 +397,8 @@ margin-top: 130px;
   overflow: hidden;
   display: inline-block;
   border-radius: 15px;
+ display: flex;
+ align-items: center;
 }
 
 #image-containerthirdsection img {
