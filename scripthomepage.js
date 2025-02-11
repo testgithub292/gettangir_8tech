@@ -142,3 +142,17 @@ document.addEventListener("click", (event) => {
     toggleBtnCard5.textContent = "Show More";
   }
 });
+
+//*********************************************************************** 
+function toggleText() {
+  var text = document.getElementById("toggleText");
+  var button = document.querySelector(".toggleButton");
+
+  if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.innerHTML = "Hide";
+  } else {
+      text.style.display = "none";
+      button.innerHTML = "Show";
+  }
+}
