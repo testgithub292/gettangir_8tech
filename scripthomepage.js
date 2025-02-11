@@ -156,3 +156,59 @@ function toggleText() {
       button.innerHTML = "Show";
   }
 }
+
+
+function toggleText2() {
+  var text = document.getElementById("toggleText2");
+  var button = document.querySelector(".toggleButton2");
+
+  if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.innerHTML = "Hide";
+  } else {
+      text.style.display = "none";
+      button.innerHTML = "Show";
+  }
+}
+
+
+function toggleText3() {
+  var text = document.getElementById("toggleText3");
+  var button = document.querySelector(".toggleButton3");
+
+  if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.innerHTML = "Hide";
+  } else {
+      text.style.display = "none";
+      button.innerHTML = "Show";
+  }
+}
+
+
+function toggleText4() {
+  var text = document.getElementById("toggleText4");
+  var button = document.querySelector(".toggleButton4");
+
+  if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.innerHTML = "Hide";
+  } else {
+      text.style.display = "none";
+      button.innerHTML = "Show";
+  }
+}
+
+
+function toggleText5() {
+  var text = document.getElementById("toggleText5");
+  var button = document.querySelector(".toggleButton5");
+
+  if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.innerHTML = "Hide";
+  } else {
+      text.style.display = "none";
+      button.innerHTML = "Show";
+  }
+}
