@@ -150,7 +150,7 @@ color: var(--color);
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
 
     .navbar-toggler {
        color: black !important;

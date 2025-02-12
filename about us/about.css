@@ -163,7 +163,7 @@ background-color: whitesmoke;
   
  
   
-  @media (max-width: 992px) {
+  @media (max-width: 1150px) {
   
       .navbar-toggler {
          color: black !important;
