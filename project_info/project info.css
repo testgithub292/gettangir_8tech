@@ -547,7 +547,7 @@ color: var(--color);
 #infoParagraphbg{
     margin-top: 20px;
     padding: 10px 40px;
-    background-color: #e6e6e6;
+  
   }
   .info-paragraph {
     line-height: 35px;
@@ -589,7 +589,7 @@ color: var(--color);
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  background: linear-gradient(to right, rgb(236, 236, 236), #d3d3d3, rgba(245, 222, 179, 0.486)); 
+
   padding: 3rem 0;
 }
 
@@ -950,7 +950,7 @@ p {
 .bodyheader{
   border: 1px solid black;
   height: 200px;
-  margin-top: 72px;
+  margin-top: 100px;
   border: hidden;
   text-align: center;
   padding-top: 15px;
@@ -961,11 +961,11 @@ p {
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif !important;
 }
- 
+ /*
 
 #compareable_projectbg{
 
-  background: linear-gradient(to right, white, #d3d3d3, rgba(245, 222, 179, 0.664)); /* Gradient background */
+  background: linear-gradient(to right, white, #d3d3d3, rgba(245, 222, 179, 0.664)); /* Gradient background 
 }
 
 #bgshortversion{
@@ -1043,7 +1043,7 @@ p {
   background: linear-gradient(to right, white, #d3d3d3, rgba(245, 222, 179, 0.664));
 }
 
-
+*/
 
 
 /* section 2 ------------------------------------------------------------------------------------
@@ -1072,6 +1072,7 @@ p {
   transition: transform 0.5s, opacity 0.5s;
   opacity: 0;
   transform: translateX(-100px); /* Start from the left */
+  font-family: 'Times New Roman', Times, serif;
 }
 .sectiontext.visible {
   opacity: 1;
