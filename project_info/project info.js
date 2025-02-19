@@ -107,7 +107,7 @@
  // Card 3 Toggle Functionality
  toggleBtnCard3.addEventListener("click", () => {
    hiddenContentCard3.classList.toggle("visible-investor-gain");
-   toggleBtnCard3.textContent = hiddenContentCard2.classList.contains("visible-investor-gain")
+   toggleBtnCard3.textContent = hiddenContentCard3.classList.contains("visible-investor-gain")
      ? "Show Less"
      : "Show More";
  });
@@ -115,19 +115,19 @@
  // Card 4 Toggle Functionality
  toggleBtnCard4.addEventListener("click", () => {
    hiddenContentCard4.classList.toggle("visible-investor-gain");
-   toggleBtnCard4.textContent = hiddenContentCard2.classList.contains("visible-investor-gain")
+   toggleBtnCard4.textContent = hiddenContentCard4.classList.contains("visible-investor-gain")
      ? "Show Less"
      : "Show More";
  });
  
-/* // Card 5 Toggle Functionality
+// Card 5 Toggle Functionality
  toggleBtnCard5.addEventListener("click", () => {
    hiddenContentCard5.classList.toggle("visible-investor-gain");
-   toggleBtnCard5.textContent = hiddenContentCard2.classList.contains("visible-investor-gain")
+   toggleBtnCard5.textContent = hiddenContentCard5.classList.contains("visible-investor-gain")
      ? "Show Less"
      : "Show More";
  });
- */
+ 
  // Hide Content When Clicking Outside Card 1
  document.addEventListener("click", (event) => {
    if (!card1.contains(event.target)) {
@@ -146,7 +146,7 @@
  
  // Hide Content When Clicking Outside Card 3
  document.addEventListener("click", (event) => {
-   if (!card2.contains(event.target)) {
+   if (!card3.contains(event.target)) {
      hiddenContentCard3.classList.remove("visible-investor-gain");
      toggleBtnCard3.textContent = "Show More";
    }
@@ -155,7 +155,7 @@
  
  // Hide Content When Clicking Outside Card 4
  document.addEventListener("click", (event) => {
-   if (!card2.contains(event.target)) {
+   if (!card4.contains(event.target)) {
      hiddenContentCard4.classList.remove("visible-investor-gain");
      toggleBtnCard4.textContent = "Show More";
    }
@@ -164,7 +164,7 @@
  /*
  // Hide Content When Clicking Outside Card 5
  document.addEventListener("click", (event) => {
-   if (!card2.contains(event.target)) {
+   if (!card5.contains(event.target)) {
      hiddenContentCard5.classList.remove("visible-investor-gain");
      toggleBtnCard5.textContent = "Show More";
    }
