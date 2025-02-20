@@ -67,6 +67,8 @@ toggleBtnCard1.addEventListener("click", () => {
   toggleBtnCard1.textContent = hiddenContentCard1.classList.contains("visible-investor-gain")
     ? "Show Less"
     : "Show More";
+
+    setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
 
 // Card 2 Toggle Functionality
@@ -75,6 +77,8 @@ toggleBtnCard2.addEventListener("click", () => {
   toggleBtnCard2.textContent = hiddenContentCard2.classList.contains("visible-investor-gain")
     ? "Show Less"
     : "Show More";
+
+    setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
 
 // Card 3 Toggle Functionality
@@ -83,6 +87,8 @@ toggleBtnCard3.addEventListener("click", () => {
   toggleBtnCard3.textContent = hiddenContentCard3.classList.contains("visible-investor-gain")
     ? "Show Less"
     : "Show More";
+
+    setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
 
 // Card 4 Toggle Functionality
@@ -91,6 +97,8 @@ toggleBtnCard4.addEventListener("click", () => {
   toggleBtnCard4.textContent = hiddenContentCard4.classList.contains("visible-investor-gain")
     ? "Show Less"
     : "Show More";
+
+    setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
 
 // Card 5 Toggle Functionality
@@ -99,6 +107,8 @@ toggleBtnCard5.addEventListener("click", () => {
   toggleBtnCard5.textContent = hiddenContentCard5.classList.contains("visible-investor-gain")
     ? "Show Less"
     : "Show More";
+
+    setTimeout(() => { ScrollTrigger.refresh(); }, 900);
 });
 
 // Hide Content When Clicking Outside Card 1
