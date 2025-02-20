@@ -583,7 +583,7 @@ margin-top: 130px;
 #videothesolutionsection{
   margin-top: 50px;
   width: 55%;
-  height: 400px;
+  height: 350px;
   border-radius: 10px;
 }
 
@@ -605,13 +605,17 @@ margin-top: 130px;
 }
 
 @media (max-width: 768px) {
+
+.section10Card {
+  height: 400px;
+}
+}
+
+@media (max-width: 450px) {
   #videothesolutionsection{
     margin-top: 10px;
     height: 200px;
   }
-.section10Card {
-  height: auto;
-}
 }
 
 .section10Card:hover {
