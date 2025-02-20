@@ -605,7 +605,10 @@ margin-top: 130px;
 }
 
 @media (max-width: 768px) {
-  
+  #videothesolutionsection{
+    margin-top: 10px;
+    height: 200px;
+  }
 .section10Card {
   height: auto;
 }
