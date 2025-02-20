@@ -474,13 +474,13 @@ margin-top: 130px;
 }
 
 
-#fourt_card1{
+/*#fourt_card1{
  
   background-image: url(images/fourthcard1st\ img.png);
-  background-size: cover; /* Image ko full cover karein */
-  background-position: center; /* Image ko center karein */
-  background-repeat: no-repeat; /* Repeat na karein */
-}
+  background-size: cover; /* Image ko full cover karein 
+  background-position: center; /* Image ko center karein 
+  background-repeat: no-repeat; /* Repeat na karein 
+}*/
 #fourt_card2{
   background-image: url(images/fourth\ section3rd\ img.jpg);
   background-size: cover; /* Image ko full cover karein */
