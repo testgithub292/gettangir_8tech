@@ -480,20 +480,20 @@ margin-top: 130px;
   background-size: cover; /* Image ko full cover karein 
   background-position: center; /* Image ko center karein 
   background-repeat: no-repeat; /* Repeat na karein 
-}
+}*/
 #fourt_card2{
-  background-image: url(images/fourth\ section3rd\ img.jpg);
-  background-size: cover; /* Image ko full cover karein 
-  background-position: center; /* Image ko center karein 
-  background-repeat: no-repeat; /* Repeat na karein 
+  background-image: url(images/5\ card\ image\ card\ 2.jpg);
+  background-size: cover; /* Image ko full cover karein */
+  background-position: center; /* Image ko center karein*/ 
+  background-repeat: no-repeat; /* Repeat na karein */
 }
 #fourt_card3{
-  background-image: url(images/fourthcard2st\ img.jpg.png);
-  background-size: cover; /* Image ko full cover karein 
-  background-position: center; /* Image ko center karein 
-  background-repeat: no-repeat; /* Repeat na karein 
+  background-image: url(images/5\ card\ image\ card\ 3.jpg);
+  background-size: cover; /* Image ko full cover karein */
+  background-position: center; /* Image ko center karein */
+  background-repeat: no-repeat; /* Repeat na karein */
 }
-
+/*
 #fourt_card4{
   background-image: url(images/fourth\ section\ 4th\ img.jpg);
   background-size: cover; /* Image ko full cover karein 
