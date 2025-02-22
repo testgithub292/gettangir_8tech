@@ -264,7 +264,7 @@ preloader.addEventListener("touchend", () => {
 
 hideTimeout = setTimeout(hidePreloader, displayTime);*/
 
-
+/*
 let visitCount = localStorage.getItem("visitCount") || 0;
 visitCount++;
 localStorage.setItem("visitCount", visitCount);
@@ -280,6 +280,57 @@ let hasVisited = sessionStorage.getItem("hasVisited");
 
 if (!hasVisited) {
     let displayTime = visitCount === 1 ? 5000 : 1000; // First visit 5 sec, next visits 1 sec
+    let hideTimeout;
+
+    function hidePreloader() {
+        document.querySelector(".preloader").style.display = "none";
+        document.querySelector(".overlay").style.display = "none";
+    }
+
+    let preloader = document.querySelector(".preloader");
+    let isHolding = false;
+
+    preloader.addEventListener("mouseenter", () => {
+        clearTimeout(hideTimeout);
+    });
+    preloader.addEventListener("mouseleave", () => {
+        hideTimeout = setTimeout(hidePreloader, 1000);
+    });
+
+    preloader.addEventListener("touchstart", () => {
+        isHolding = true;
+        clearTimeout(hideTimeout);
+    });
+    preloader.addEventListener("touchend", () => {
+        isHolding = false;
+        hideTimeout = setTimeout(hidePreloader, 1000);
+    });
+
+    hideTimeout = setTimeout(hidePreloader, displayTime);
+} else {
+    document.querySelector(".preloader").style.display = "none";
+    document.querySelector(".overlay").style.display = "none";
+}
+*/
+
+
+let visitCount = localStorage.getItem("visitCount") || 0;
+visitCount++;
+localStorage.setItem("visitCount", visitCount);
+
+// Check if the page was refreshed or navigated
+let isRefreshed = performance.navigation.type === 1; // 1 means refreshed
+
+if (isRefreshed) {
+    sessionStorage.removeItem("hasVisited"); // Refresh hone par reset
+}
+
+let hasVisited = sessionStorage.getItem("hasVisited");
+
+if (!hasVisited) {
+    sessionStorage.setItem("hasVisited", "true"); // Navigate hone par set hoga
+
+    let displayTime = visitCount === 1 ? 5000 : 5000; // First visit 5 sec, next visits 1 sec
     let hideTimeout;
 
     function hidePreloader() {
