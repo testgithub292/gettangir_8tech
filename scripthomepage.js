@@ -222,3 +222,9 @@ function toggleText5() {
       button.innerHTML = "Show";
   }
 }
+
+//********************************************************************************************** 
+
+setTimeout(() => {
+  document.querySelector(".preloader").style.display = "none";
+}, 5000);
