@@ -229,13 +229,13 @@ function toggleText5() {
   document.querySelector(".preloader").style.display = "none";
 }, 5000);*/
 
-
+/*
 
 let visitCount = localStorage.getItem("visitCount") || 0;
 visitCount++;
 localStorage.setItem("visitCount", visitCount);
 
-let displayTime = visitCount === 1 ? 5000 : 2000; // First visit 5 sec, next visits 2 sec
+let displayTime = visitCount === 1 ? 5000 : 1000; // First visit 5 sec, next visits 2 sec
 let hideTimeout;
 
 function hidePreloader() {
@@ -262,4 +262,52 @@ preloader.addEventListener("touchend", () => {
     hideTimeout = setTimeout(hidePreloader, 1000);
 });
 
-hideTimeout = setTimeout(hidePreloader, displayTime);
+hideTimeout = setTimeout(hidePreloader, displayTime);*/
+
+
+let visitCount = localStorage.getItem("visitCount") || 0;
+visitCount++;
+localStorage.setItem("visitCount", visitCount);
+
+// Check if the user navigated from another page
+let hasNavigated = performance.navigation.type === 1 ? false : true;
+
+if (hasNavigated) {
+    sessionStorage.setItem("hasVisited", "true");
+}
+
+let hasVisited = sessionStorage.getItem("hasVisited");
+
+if (!hasVisited) {
+    let displayTime = visitCount === 1 ? 5000 : 1000; // First visit 5 sec, next visits 1 sec
+    let hideTimeout;
+
+    function hidePreloader() {
+        document.querySelector(".preloader").style.display = "none";
+        document.querySelector(".overlay").style.display = "none";
+    }
+
+    let preloader = document.querySelector(".preloader");
+    let isHolding = false;
+
+    preloader.addEventListener("mouseenter", () => {
+        clearTimeout(hideTimeout);
+    });
+    preloader.addEventListener("mouseleave", () => {
+        hideTimeout = setTimeout(hidePreloader, 1000);
+    });
+
+    preloader.addEventListener("touchstart", () => {
+        isHolding = true;
+        clearTimeout(hideTimeout);
+    });
+    preloader.addEventListener("touchend", () => {
+        isHolding = false;
+        hideTimeout = setTimeout(hidePreloader, 1000);
+    });
+
+    hideTimeout = setTimeout(hidePreloader, displayTime);
+} else {
+    document.querySelector(".preloader").style.display = "none";
+    document.querySelector(".overlay").style.display = "none";
+}

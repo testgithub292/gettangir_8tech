@@ -10,39 +10,6 @@
   } 
   */
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-  .preloader {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    font-size: 24px;
-    padding: 20px 40px;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 1000;
-    width: 80%;
-    max-width: 400px;
-    animation: zoomIn 1s ease-out forwards;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-@keyframes zoomIn {
-    from { transform: translate(-50%, -50%) scale(0); opacity: 0; }
-    to { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-}
 
 
 
@@ -1241,3 +1208,39 @@ margin-top: 130px;
       background: #555;
     }
     
+
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+  }
+  
+    .preloader {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      font-size: 24px;
+      padding: 20px 40px;
+      border-radius: 10px;
+      text-align: center;
+      z-index: 1000;
+      width: 80%;
+      max-width: 400px;
+      animation: zoomIn 1s ease-out forwards;
+      cursor: pointer;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  @keyframes zoomIn {
+      from { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+      to { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  }
+  
