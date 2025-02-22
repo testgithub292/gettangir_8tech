@@ -746,16 +746,12 @@ margin-top: 130px;
 }
 
 #sixsectionstrike{
-  text-align: center;
- font-family: 'Times New Roman', Times, serif;
-  margin-top: 50px;
-}
-
-#sixsectionstrike2{
   text-align: left;
  font-family: 'Times New Roman', Times, serif;
   margin-top: 50px;
 }
+
+
 
 .sixsectionhead{
   color: #007bff;
