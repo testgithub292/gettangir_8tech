@@ -15,8 +15,32 @@
       <!--CDN social Link----------------------------------------------------------------->
   
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
 </head>
 <body>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     
     <header>
         <nav class="navbar navbar-expand-xxl navbarcolorstyle bsb-navbar bsb-navbar-hover bsb-navbar-caret fixed-top" id="navbar">
@@ -172,7 +196,7 @@
                                 </ul>
                             </li-->
                             <li class="nav-item">
-                              <a class="nav-link active" id="textstyle" aria-current="page" href="about us/advisors.html">Our Team</a>
+                              <a class="nav-link active" id="textstyle" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal" href="about us/advisors.html">Our Team</a>
                           </li>
                           <!--home page link-->
 
@@ -188,7 +212,7 @@
                           <a class="nav-link" id="bytokenbtnnav" href="https://member.gettangi.com/" target="_blank">Buy Token</a>
                       </div-->
                         <div id="contact_bt_css">
-                            <a class="nav-link" id="confetti-btn" href="contact.html">Contact Us</a>
+                            <a  class="nav-link" id="confetti-btn"  href="#movesectioncontactustoclub">Buy Token</a>
                         </div>
                     </div>
                 </div>
@@ -272,6 +296,8 @@
     </div>
   </div>
 </div>
+
+
 
 
 
@@ -370,7 +396,7 @@
 <br>
 
          <div class="container" id="fourthsection">
-           <b class="fourthsectionheading">From Cash to Token: Maximizing Token Adoption for Investor Value</b> <br> <br>
+           <b class="fourthsectionheading">Maximising Investor Value</b> <br> <br>
            <p>As an investor, the key to your potential returns lies in the widespread adoption of the Tangi token. Our strategy is designed to capture consumers from the start by offering them reliable, compliant payment solutions they’ve been waiting for. Once they begin using traditional payment methods, the natural progression is for them to adopt the token, driven by its rewards and cost-saving benefits. This ensures a growing demand for the token, directly increasing its value and benefitting you as an investor. Here’s how we make this happen…</p>
            <p>Retailers and consumers alike will be relieved to finally have access to reliable and compliant digital payment solutions. But what’s even more exciting is that, alongside these traditional options, they will discover the token as a more rewarding and cost-effective alternative—operating seamlessly from the same terminal, with the token serving as the cornerstone of our solution. </p>
           <div class="row" id="thirdsectionrow">
@@ -461,8 +487,9 @@
 
 
 
-        <div class="container" id="sixsectionstrike">
-          <b class="sevensectionhead">The Word On The Street</b>
+        <div class="container" id="sixsectionstrike2">
+          <b class="sevensectionhead">The Word On The Street</b> <br>
+          <p class="sixsectioncontent">Words on the street are whispers of a revolution waiting to happen slowly.</p>
       </div>
 
         <div class="section10body" id="movesectiontenth">
@@ -659,22 +686,34 @@
             </div>
            </div>
 
-        <div class="fivthsectionbg">
+        <div class="fivthsectionbg" id="movesectioncontactustoclub">
             <div class="container" id="fivesection">
-                <b class="fivesectionheading">So why should you invest in the token?</b>
-                <p class="fivesectioncontent">Because we are the only payment provider offering a bank-compliant solution in the cannabis sector. <b>By investing now,</b></p>
+                <b class="fivesectionheading">Your Investment Options</b>
+                <p class="fivesectioncontent">Two Tailored Investment Opportunities:</p>
+                <p>We understand that every investor has unique goals and strategies. That’s why we’ve structured our presale with two distinct opportunities, ensuring that everyone can secure a meaningful position in Tangi Token’s promising future.</p>
                </div>
                <br>
                <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <img src="images/five section image 1.png" width="70" height="60" alt="">  <br>
-                        <b style="font-size: 18px; color: #cc2eb2;">First Mover</b>
+                    <div class="col-4">
+                        <!--img src="images/five section image 1.png" width="70" height="60" alt=""-->  <br>
+                        <b style="font-size: 18px; color: #cc2eb2;">Option 1: General Presale</b>
                         <br>
+                        <p>Designed for investors seeking a straightforward path to growth, The General PreSale offers a total of 10 million tokens</p>
                         
-                        <p>Secure a stake in a market ready to explode with potential.</p>
+                        <ul>
+                          <li><b>Exclusivity Pricing</b>: For the fastest movers, the first 5 million tokens are priced at a dicounted price of just $0.80c per token. Once  those first 5 million tokens are snapped up, the remaing 5 million tokens can be purchased at $1.00 per token.</li>
+                          <li><b>Minimum Purchase</b>: 1,250 tokens, ensuring accessibility for all investors.</li>
+                        </ul>
+                        <p>Whether you’re looking to test the waters or establish a solid stake, this option provides a compelling entry point into a growing ecosystem.</p>
+                        <a href="#" class="btnfirstsection">Join PreSale Now</a>
+                      </div>
+                    <div class="col-1 text-center">
+                      <hr class="vertical-hr">
+                      <!--a href="#" class="btnfirstsection">Join Elite Membership</a-->
                     </div>
-                    <div class="col">
+                    
+                    <!--div class="col">
                         <img src="images/five section image 2.png" width="50" height="50" alt=""> 
                         <br>
                         <b style="font-size: 18px; color: #cc2eb2;">Go-To Payment</b>
@@ -688,15 +727,36 @@
                         <b style="font-size: 18px; color: #cc2eb2;"> Mass Adoption </b>
                         <br>
                         <p>Millions of consumers with real needs will adopt our token.</p>
-                    </div>
-                    <div class="col">
-                        <img src="images/five section image 4.png" width="60" height="60" alt="">
+                    </div-->
+                    <div class="col-7">
+                        <!--img src="images/five section image 4.png" width="60" height="60" alt=""-->
                         <br>
-                        <b style="font-size: 18px; color: #cc2eb2;">Hurdles Overcome    </b>
+                        <b style="font-size: 24px; color: #cc2eb2;"><b>Option 2:</b> Elite Profit Sharing Membership </b>
                         <br>
-                        <p>Compliance, banking, and regulatory approval are already in place.</p>
+                        <p>Designed for those seeking to secure larger stakes, the Elite Investor Membership provides unparalleled benefits :</p>
+                        <ul>
+                          <!--li><b>Entry Requirement</b>: Purchase of 50,000+ ($30k)</li-->
+                          <li><b>Exclusive Benefits:</b>
+                            <br>
+                            <br>
+                          <ul>
+                              <li>Exclusive discounted token price of <b>$0.60</b> per token—40% below the general presale price.</li>
+                              <li>Elite Members gain access to a <b>profit-sharing program</b>, offering a share of the company's net revenues for five years.</li>
+                              <li>This program is expected to generate approximately <b>$75,000-$100,000 OTE</b> per position secured, in annual <b>residual income</b>.</li>
+                          </ul>
+                        </li>
+                        <br>
+                          <li><b>Strategic Advantage</b>: Elite members not only secure tokens at the best possible price but also gain additional returns through their active participation in the project’s profit sharing program.</li>
+                          <li><b>Entry Requirement:</b> <b> As little as</b> 50,000+ Tokens ($30k) <b>secures this enviable position for you.</b></li>
+                        </ul>
+                        <a href="#" class="btnfirstsection">Join Elite Membership</a>
                     </div>
-                </div>
+
+                  </div>
+                  <br>
+                  <p class="fivesectioncontent">Where Do You Fit In?</p>
+                  <p>Whether you choose the <b>General Presale</b> or the <b>Elite Membership</b>, both options position you at the forefront of Tangi’s growth story. Early investors are uniquely placed to benefit from our compliance-driven market strategy, limited token supply, and growing ecosystem of incentivized end users.</p>
+             
                </div>
         </div>
 
@@ -894,6 +954,10 @@
     <br>
     <br>
 
+  <!-- Button trigger modal -->
+<!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button-->
 
   <footer class="site-footer">
     <div class="footer-content">
