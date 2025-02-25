@@ -1064,6 +1064,10 @@ margin-top: 130px;
   padding: 0 20px;
 }
 
+.footer-contact {
+  text-align: center;
+}
+
 .footer-links, .footer-contact {
   flex-basis: 45%;
 }
@@ -1188,7 +1192,7 @@ margin-top: 130px;
   }
 
   .footer-social, .footer-legal {
-    justify-content: left;
+    justify-content: center;
   }
 }
 
