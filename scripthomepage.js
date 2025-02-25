@@ -368,3 +368,18 @@ if (!hasVisited) {
 
 //****************************************************** */
 
+function openModalAndScroll(event) {
+  event.preventDefault(); // Pehle navigation rokna
+
+  // Modal ko show karna
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  myModal.show();
+
+  // Jab modal band ho to scroll karein
+  document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+      var targetSection = document.getElementById('movesectioncontactustoclub');
+      if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+  });
+}
