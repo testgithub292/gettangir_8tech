@@ -326,6 +326,8 @@ margin-top: 130px;
       text-align: center;
       justify-content: center;
   }
+
+  
   .content_firstsection h1 {
       font-size: 2rem;
   }
@@ -333,9 +335,24 @@ margin-top: 130px;
       font-size: 1rem;
   }
 }
+@media (max-width: 520px) {
 
+  .btnfirstsection {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .btnfirstsection {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 450px) {
- 
+  .btnfirstsection {
+    font-size: 0.7rem;
+  }
+
 .firstsectionsecondline{
   font-size: 20px;
 }
@@ -786,7 +803,6 @@ margin-top: 130px;
 #sixsectionstrike{
   text-align: left;
  font-family: 'Times New Roman', Times, serif;
-  margin-top: 50px;
 }
 
 #sixsectionstrike2{
