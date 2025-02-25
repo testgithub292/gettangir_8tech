@@ -367,7 +367,7 @@ if (!hasVisited) {
 
 
 //****************************************************** */
-
+/*
 function openModalAndScroll(event) {
   event.preventDefault(); // Pehle navigation rokna
 
@@ -382,4 +382,25 @@ function openModalAndScroll(event) {
           targetSection.scrollIntoView({ behavior: 'smooth' });
       }
   });
+}*/
+
+function navigateAndOpenModal(event) {
+  event.preventDefault(); // Default behavior rokna
+
+  // Pehle page ko smoothly scroll karwana
+  var targetSection = document.getElementById('movesectioncontactustoclub');
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // 1 second (1000ms) ka delay daalna taake pehle scroll complete ho, phir modal open ho
+  setTimeout(function () {
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
+
+      // Modal 5 second (5000ms) ke baad automatically close hoga
+      setTimeout(function () {
+          myModal.hide();
+      }, 5000);
+  }, 1000);
 }
