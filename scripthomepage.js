@@ -418,3 +418,17 @@ document.getElementById("leftBtn").addEventListener("click", function() {
 document.getElementById("rightBtn").addEventListener("click", function() {
     cardContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
+
+
+
+
+const cardContainerartical = document.getElementById("cardContainerartical");
+const cardWidthartical = 310; // Card width + gap
+
+document.getElementById("leftBtnartical").addEventListener("click", function() {
+  cardContainerartical.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
+
+document.getElementById("rightBtnartical").addEventListener("click", function() {
+  cardContainerartical.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});

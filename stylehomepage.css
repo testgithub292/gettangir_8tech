@@ -823,8 +823,9 @@ margin-top: 130px;
 
 
 .sixsectionhead{
-  color: #007bff;
-  font-size: 45px;
+  color: #5737c4;
+  font-size: 35px;
+  font-weight: bold;
 }
 .sixsectioncontent{
   font-size: 18px;
@@ -834,8 +835,8 @@ margin-top: 130px;
     font-size: 40px;
   }
   .sevensectionhead{
-    color: #007bff;
-    font-size: 40px !important;
+    color: #5737c4;
+    font-size: 30px !important;
   }
 }
 
@@ -844,8 +845,8 @@ margin-top: 130px;
     font-size: 35px;
   }
   .sevensectionhead{
-    color: #007bff;
-    font-size: 35px !important;
+    color: #5737c4;
+    font-size: 30px !important;
   }
   #sixsectioncardheading{
     margin-top: 50px;
@@ -857,7 +858,7 @@ margin-top: 130px;
     font-size: 25px;
   }
   .sevensectionhead{
-    color: #007bff;
+    color: #5737c4;
     font-size: 30px !important;
   }
 
@@ -869,8 +870,8 @@ margin-top: 130px;
 /*--------------------------------*/
 
 .sevensectionhead{
-  color: #007bff;
-  font-size: 45px;
+  color: #5737c4;
+  font-size: 30px;
 }
 
 
@@ -941,82 +942,82 @@ margin-top: 130px;
   }
 }
 #sevencardfirstbg{
-  background-image: url(images/artical\ card\ image\ 5.png);
+  background-image: url(images/aritical\ home\ page\ card\ 1.jpg);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 #sevencardfirstbg2{
-  background-image: url(images/artical\ card\ image\ \ 6.png);
+  background-image: url(images/aritical\ home\ page\ card\ 2.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 #sevencardfirstbg3{
-  background-image: url(images/artical\ card\ image\ 1.png);
+  background-image: url(images/aritical\ home\ page\ card\ 3.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg4{
-  background-image: url(images/artical\ card\ image\ 2.png);
+  background-image: url(images/aritical\ home\ page\ card\ 4.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg5{
-  background-image: url(images/artical\ card\ image\ 3.png);
+  background-image: url(images/aritical\ home\ page\ card\ 5.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg6{
-  background-image: url(images/artical\ card\ image\ 4.png);
+  background-image: url(images/aritical\ home\ page\ card\ 6.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg7{
-  background-image: url(images/eigth\ card\ image\ 3.jpg);
+  background-image: url(images/aritical\ home\ page\ card\ 7.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg8{
-  background-image: url(images/eigth\ card\ image\ 3.jpg);
+  background-image: url(images/aritical\ home\ page\ card\ 8.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg9{
-  background-image: url(images/eigth\ card\ image\ 3.jpg);
+  background-image: url(images/aritical\ home\ page\ card\ 9.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg10{
-  background-image: url(images/eigth\ card\ image\ 3.jpg);
+  background-image: url(images/aritical\ home\ page\ card\ 9.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg11{
-  background-image: url(images/eigth\ card\ image\ 3.jpg);
+  background-image: url(images/aritical\ home\ page\ card\ 11.jpg.png);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
 
 #sevencardfirstbg12{
-  background-image: url(images/eigth\ card\ image\ 3.jpg);
+  background-image: url(images/);
   background-size: cover; /* Image ko full cover karein */
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
@@ -1366,12 +1367,20 @@ margin-top: 130px;
 
   /*-------------------------------------------------------*/
 
-  #cardWrapper {
-    overflow: hidden;
+  #cardWrapperartical {
+    
     position: relative;
     width: 100%;
     max-width: 1200px;
     margin: auto;
+}
+
+#cardWrapper {
+  
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 #cardContainer {
     display: flex;
@@ -1384,6 +1393,19 @@ margin-top: 130px;
 }
 #cardContainer::-webkit-scrollbar {
     display: none;
+}
+
+#cardContainerartical {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#cardContainerartical::-webkit-scrollbar {
+  display: none;
 }
 .card_8 {
     min-width: 300px;
@@ -1398,7 +1420,29 @@ margin-top: 130px;
     box-shadow 0.5s ease-in-out;
 }
 
+.card_artical{
+  min-width: 300px;
+  height: 400px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items:end;
+  justify-content: center;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+  box-shadow 0.5s ease-in-out;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .card_8:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.card_artical:hover {
   transform: scale(1.1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -1407,12 +1451,23 @@ margin-top: 130px;
     top: 50%;
     transform: translateY(-50%);
     background: transparent;
-    color: black;
+    filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(200deg);
     font-size: 50px;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    z-index: 100;
+    z-index: 999 !important;
 }
-#leftBtn { left: -5px; }
-#rightBtn { right: -5px; }
+#leftBtn { left: -65px; }
+#rightBtn { right: -65px; }
+#leftBtnartical { left: -65px; }
+#rightBtnartical { right: -65px; }
+
+
+@media (max-width: 450px) {
+
+  #leftBtn { left: -10px; }
+#rightBtn { right: -10px; }
+#leftBtnartical { left: -10px; }
+#rightBtnartical { right: -10px; }
+}
