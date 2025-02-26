@@ -782,9 +782,10 @@ margin-top: 130px;
   #option_sectioncol{
     width: 100%;
   }
-  .vertical-hr{
- display: none;
+  #option_sectioncol2{
+    display: none;
   }
+
 }
 
 
@@ -837,7 +838,7 @@ margin-top: 130px;
 
 .sixsectionhead{
   color: #5737c4;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
 }
 .sixsectioncontent{
