@@ -15,7 +15,7 @@
 
   //=============================================================
 
-  gsap.registerPlugin(ScrollTrigger);
+  /*gsap.registerPlugin(ScrollTrigger);
 
 
   const section10CardsContainer3 = document.getElementById("section10CardsContainer3");
@@ -33,7 +33,7 @@
       scrub: 0.5,
       invalidateOnRefresh: true,
     },
-  });
+  });*/
   
 
   //========================================================================
@@ -404,3 +404,17 @@ function navigateAndOpenModal(event) {
       }, 5000);
   }, 1000);
 }
+
+
+/*-----------------------------------------------------*/
+
+const cardContainer = document.getElementById("cardContainer");
+const cardWidth = 310; // Card width + gap
+
+document.getElementById("leftBtn").addEventListener("click", function() {
+    cardContainer.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
+
+document.getElementById("rightBtn").addEventListener("click", function() {
+    cardContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});

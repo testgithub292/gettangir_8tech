@@ -814,7 +814,7 @@ margin-top: 130px;
 }
 
 #sixsectionstrike2{
-  text-align: center !important;
+  text-align: left;
  font-family: 'Times New Roman', Times, serif;
   margin-top: 50px;
 }
@@ -1360,3 +1360,59 @@ margin-top: 130px;
     border-radius: 15px; /* Border ka radius */
     overflow: hidden; /* Border radius apply karne ke liye */
   }
+
+
+
+
+  /*-------------------------------------------------------*/
+
+  #cardWrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+#cardContainer {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#cardContainer::-webkit-scrollbar {
+    display: none;
+}
+.card_8 {
+    min-width: 300px;
+    height: 400px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+    box-shadow 0.5s ease-in-out;
+}
+
+.card_8:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+#leftBtn { left: -5px; }
+#rightBtn { right: -5px; }
