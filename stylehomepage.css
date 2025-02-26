@@ -1381,8 +1381,8 @@ margin-top: 130px;
 
   /*-------------------------------------------------------*/
 
+
   #cardWrapperartical {
-    
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -1447,7 +1447,8 @@ margin-top: 130px;
   box-shadow 0.5s ease-in-out;
   color: white;
   font-weight: bold;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -1470,15 +1471,47 @@ margin-top: 130px;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    z-index: 999 !important;
+    
 }
 #leftBtn { left: -65px; }
 #rightBtn { right: -65px; }
 #leftBtnartical { left: -65px; }
 #rightBtnartical { right: -65px; }
 
+@media (max-width: 1250px) {
+  #cardWrappercontainer{
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1168px) {
+  #cardWrappercontainer{
+    width: 100%;
+    max-width: 800px;
+  }
+}
 
-@media (max-width: 450px) {
+@media (max-width: 910px) {
+  #cardWrappercontainer{
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 810px) {
+  #cardWrappercontainer{
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 710px) {
+  #cardWrappercontainer{
+    width: 100%;
+    max-width: 350px;
+  }
+}
+@media (max-width: 470px) {
 
   #leftBtn { left: -10px; }
 #rightBtn { right: -10px; }
