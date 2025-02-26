@@ -775,6 +775,19 @@ margin-top: 130px;
   font-family: 'Times New Roman', Times, serif;
 }
 
+@media (max-width:  768px) {
+  #option_sectionrow{
+    display: block !important;
+  }
+  #option_sectioncol{
+    width: 100%;
+  }
+  .vertical-hr{
+ display: none;
+  }
+}
+
+
 @media (max-width:  660px) {
   .fivesectionheading{
     font-size: 40px;
