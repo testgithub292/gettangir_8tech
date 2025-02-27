@@ -247,8 +247,6 @@ background-color: whitesmoke;
 
 
 
-
-  
 /*---Footer css--------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------*/
@@ -267,12 +265,16 @@ background-color: whitesmoke;
   padding: 0 20px;
 }
 
+.footer-contact {
+  text-align: center;
+}
+
 .footer-links, .footer-contact {
   flex-basis: 45%;
 }
 
 .footer-links h3, .footer-contact h3 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .footer-links ul {
@@ -301,7 +303,7 @@ background-color: whitesmoke;
 
 .footer-contact input,
 .footer-contact textarea {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   padding: 8px;
   border: none;
   border-radius: 4px;
@@ -327,7 +329,7 @@ background-color: whitesmoke;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 5px;
   padding: 0 20px;
   width: 100%;
   margin-left: auto;
@@ -377,10 +379,12 @@ background-color: whitesmoke;
   .footer-content {
     flex-direction: column;
   }
-  
+  .footer-contact {
+    margin-top: 30px;
+  }
   .footer-links, .footer-contact {
     flex-basis: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 
   .footer-bottom {
@@ -389,14 +393,13 @@ background-color: whitesmoke;
   }
 
   .footer-social, .footer-legal {
-    justify-content: center;
+    justify-content: left;
   }
 }
 
 .social-icon.fa-tiktok {
   font-size: 22px;
 }
-
 
   /* top icon css--------------------------------------------------------------------
   -----------------------------------------------------------------------------------------*/
