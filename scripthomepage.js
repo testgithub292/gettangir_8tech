@@ -432,3 +432,12 @@ document.getElementById("leftBtnartical").addEventListener("click", function() {
 document.getElementById("rightBtnartical").addEventListener("click", function() {
   cardContainerartical.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
+
+
+//-----------------------------------------------------------------------
+// pre page js
+
+document.addEventListener("DOMContentLoaded", function () {
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModalprepage'));
+  myModal.show();
+});
