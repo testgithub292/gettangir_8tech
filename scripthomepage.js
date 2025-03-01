@@ -444,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });*/
 
 // pre page and  and warning page js 
-
+/*
 let visitCount = localStorage.getItem("visitCount") || 0;
 visitCount++;
 localStorage.setItem("visitCount", visitCount);
@@ -512,7 +512,71 @@ if (!hasVisited) {
     if (modalInstance) {
         modalInstance.hide();
     }
+}*/
+
+let visitCount = localStorage.getItem("visitCount") || 0;
+visitCount++;
+localStorage.setItem("visitCount", visitCount);
+
+// Check if the page was refreshed
+let isRefreshed = performance.navigation.type === 1; // 1 means refreshed
+
+if (isRefreshed) {
+    sessionStorage.removeItem("hasVisited");
 }
+
+let hasVisited = sessionStorage.getItem("hasVisited");
+
+function showPreloader() {
+    document.querySelector(".preloader").style.display = "block";
+    document.querySelector(".overlay").style.display = "block";
+
+    let hideTimeout = setTimeout(hidePreloader, 5000);
+
+    let preloader = document.querySelector(".preloader");
+    let isHolding = false;
+
+    preloader.addEventListener("mouseenter", () => {
+        clearTimeout(hideTimeout);
+    });
+    preloader.addEventListener("mouseleave", () => {
+        hideTimeout = setTimeout(hidePreloader, 1000);
+    });
+
+    preloader.addEventListener("touchstart", () => {
+        isHolding = true;
+        clearTimeout(hideTimeout);
+    });
+    preloader.addEventListener("touchend", () => {
+        isHolding = false;
+        hideTimeout = setTimeout(hidePreloader, 1000);
+    });
+}
+
+function hidePreloader() {
+    document.querySelector(".preloader").style.display = "none";
+    document.querySelector(".overlay").style.display = "none";
+}
+
+// First-time visit logic
+if (!hasVisited) {
+    sessionStorage.setItem("hasVisited", "true"); // First visit tracking
+
+    showPreloader();
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModalprepage'));
+        myModal.show();
+
+        // جب یوزر modal بند کرے، تب preloader دوبارہ دکھے
+        document.getElementById('exampleModalprepage').addEventListener('hidden.bs.modal', function () {
+            showPreloader();
+        });
+    });
+} else {
+    hidePreloader(); // If visited before, hide preloader
+}
+
 
 
 
