@@ -1400,6 +1400,15 @@ margin-top: 130px;
     display: inline-block;
   }
 
+  .vertical-hrpre_page4 {
+    width: 1px; /* Line ki width (Patli rakhne ke liye) */
+    height: 190px; /* Apni zaroorat ke mutabiq adjust karein */
+    background-color: black; /* Color */
+    border: none; /* Default border remove */
+    transform: rotate(0deg); /* 90 degrees rotate */
+    display: inline-block;
+  }
+
   /*--------------------------------------*/
 
   .custom-table {
