@@ -1366,7 +1366,7 @@ margin-top: 130px;
   .vertical-hr {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
     height: 450px; /* Apni zaroorat ke mutabiq adjust karein */
-    background-color: black; /* Color */
+    background-color: white; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
     display: inline-block;
@@ -1375,7 +1375,7 @@ margin-top: 130px;
   .vertical-hrpre_page {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
     height: 100px; /* Apni zaroorat ke mutabiq adjust karein */
-    background-color: black; /* Color */
+    background-color: white; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
     display: inline-block;
@@ -1385,7 +1385,7 @@ margin-top: 130px;
   .vertical-hrpre_page2 {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
     height: 220px; /* Apni zaroorat ke mutabiq adjust karein */
-    background-color: black; /* Color */
+    background-color: white; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
     display: inline-block;
@@ -1394,7 +1394,7 @@ margin-top: 130px;
   .vertical-hrpre_page3 {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
     height: 200px; /* Apni zaroorat ke mutabiq adjust karein */
-    background-color: black; /* Color */
+    background-color: white; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
     display: inline-block;
@@ -1655,3 +1655,15 @@ margin-top: 130px;
       }
 
       */
+
+
+      #prepagemodalbg{
+        background-image: url(images/bg\ image\ \ modal\ prepage\ .png);
+        background-size: cover; /* Image ko full cover karein */
+        background-position: center; /* Image ko center karein*/ 
+        background-repeat: no-repeat; /* Repeat na karein */
+      }
+
+      #prepagemodalbg p {
+        font-size: 20px;
+      }
