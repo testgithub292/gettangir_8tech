@@ -646,3 +646,32 @@ if (!hasVisited) {
 }
 
 */
+
+/*------------------------------------*/
+/*
+function prepageShowPopup() {
+    document.getElementById("prepage-popup").classList.add("prepage-show");
+    document.getElementById("prepage-overlay").classList.add("prepage-show");
+}
+
+function prepageClosePopup() {
+    document.getElementById("prepage-popup").classList.remove("prepage-show");
+    document.getElementById("prepage-overlay").classList.remove("prepage-show");
+}
+
+function prepageShowFullscreen() {
+    let imgSrc = document.getElementById("prepage-popup-image").src;
+    document.getElementById("prepage-fullscreen-img").src = imgSrc;
+    document.getElementById("prepage-fullscreen").style.display = "flex";
+}
+
+function prepageCloseFullscreen() {
+    document.getElementById("prepage-fullscreen").style.display = "none";
+}
+
+*/
+/*-------------------------*/
+function openImage() {
+    var imageUrl = "https://drive.google.com/file/d/1VBN3NQNqYjBOpxB5cLDlbQR_2TtpjT3g/view?usp=sharing"; // Apni image ka URL yahan dalain
+    window.open(imageUrl, "_blank");
+}

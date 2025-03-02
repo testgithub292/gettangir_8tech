@@ -1567,3 +1567,91 @@ margin-top: 130px;
   align-items: center;
   justify-content: center;
 }
+
+/*------------------------------------*/
+/*
+        /* Overlay - Sabse upar ho *
+        .prepage-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: none;
+          z-index: 999;
+      }
+
+      .prepage-overlay.prepage-show {
+          display: block;
+      }
+
+      
+      .prepage-popup {
+          position: fixed;
+          top: -100%; /* Pehle screen se bahar *
+          left: 50%;
+          transform: translateX(-50%);
+          width: 500px; /* Width ko thoda zyada kiya *
+          height: 550px;
+          /*background: white;*/
+         /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);*
+          border-radius: 10px;
+          
+          text-align: center;
+          transition: top 0.7s ease-in-out; /* Smooth animation *
+          z-index: 1000;
+      }
+
+      @media (max-width: 470px) {
+        .prepage-popup {
+          width: 100%; /* Width ko thoda zyada kiya *
+          height: 550px;
+        
+        padding: 10px;
+        }
+      }
+
+      /* Jab show ho to smoothly top se aye *
+      .prepage-popup.prepage-show {
+          top: 50px; /* Jab open ho to screen ke andar aye *
+      }
+
+      /* Close Button *
+      .prepage-close-btn {
+          background: red;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 5px;
+          margin-bottom: 10px;
+      }
+
+      /* Image Full-Screen Mode *
+      .prepage-fullscreen {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.9);
+          display: none;
+          justify-content: center;
+          align-items: center;
+          z-index: 2000;
+      }
+
+      .prepage-fullscreen img {
+          max-width: 90%;
+          max-height: 90%;
+          border-radius: 10px;
+      }
+
+
+      #prepage-popup-image{
+        border-radius: 10px;
+      }
+
+      */
