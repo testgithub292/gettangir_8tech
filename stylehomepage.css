@@ -1374,7 +1374,7 @@ margin-top: 130px;
 
   .vertical-hrpre_page {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
-    height: 280px; /* Apni zaroorat ke mutabiq adjust karein */
+    height: 100px; /* Apni zaroorat ke mutabiq adjust karein */
     background-color: black; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
@@ -1393,7 +1393,7 @@ margin-top: 130px;
     
   .vertical-hrpre_page3 {
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
-    height: 470px; /* Apni zaroorat ke mutabiq adjust karein */
+    height: 200px; /* Apni zaroorat ke mutabiq adjust karein */
     background-color: black; /* Color */
     border: none; /* Default border remove */
     transform: rotate(0deg); /* 90 degrees rotate */
@@ -1558,4 +1558,12 @@ margin-top: 130px;
 #rightBtn { right: -10px; }
 #leftBtnartical { left: -10px; }
 #rightBtnartical { right: -10px; }
+}
+
+/*-----------------------------------------------------*/
+
+#prepagemodalheader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
