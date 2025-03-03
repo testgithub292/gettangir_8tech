@@ -750,3 +750,6 @@ showMoreBtn.addEventListener("click", function() {
 
     showMoreBtn.innerText = isHidden ? "Show Less" : "Show More";
 });
+
+/*--------------------------*/
+
