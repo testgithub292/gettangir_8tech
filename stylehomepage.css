@@ -1671,3 +1671,26 @@ margin-top: 130px;
       #prepagemodalbg li {
         font-size: 25px;
       }
+
+
+      .prepageexpand {
+        width: 50%;
+        margin: auto;
+        font-size: 18px;
+        padding: 20px;
+        border: 2px solid black;
+    }
+    
+    .hidden-content {
+        width: 50%;
+        margin: auto;
+        list-style-type: disc; /* Bullet points */
+    }
+    
+    .line {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        display: none; /* Initially hide */
+    }
+    

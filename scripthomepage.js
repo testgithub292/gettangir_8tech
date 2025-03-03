@@ -675,3 +675,34 @@ function openImage() {
     var imageUrl = "https://drive.google.com/file/d/1VBN3NQNqYjBOpxB5cLDlbQR_2TtpjT3g/view?usp=sharing"; // Apni image ka URL yahan dalain
     window.open(imageUrl, "_blank");
 }
+
+
+
+/*---------------------------------------------------*/
+
+// pre page expand code
+
+document.addEventListener("DOMContentLoaded", function () {
+    let lines = document.querySelectorAll(".hidden-content .line");
+
+    window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+        let revealFactor = 50; // Kitna scroll karne ke baad ek item show ho
+
+        lines.forEach((line, index) => {
+            let linePosition = index * revealFactor;
+
+            if (scrollPosition > linePosition) {
+                line.style.display = "list-item"; // Show properly
+                line.style.opacity = "1";
+                line.style.transform = "translateY(0px)";
+            } else {
+                line.style.opacity = "0";
+                line.style.transform = "translateY(20px)";
+                setTimeout(() => {
+                    line.style.display = "none"; // Hide properly
+                }, 300); // Hide after animation
+            }
+        });
+    });
+});
