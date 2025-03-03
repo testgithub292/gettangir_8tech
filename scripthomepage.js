@@ -678,15 +678,75 @@ function openImage() {
 
 
 
-/*---------------------------------------------------*/
+/*---------------------------------------------------
 
-document.getElementById("prepageShowMoreBtn").addEventListener("click", function() {
-    var content = document.getElementById("prepageExtraContent");
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        this.innerText = "Show Less";
+let showMoreBtn = document.getElementById("prepageShowMoreBtn");
+let extraContent = document.getElementById("prepageExtraContent");
+
+// Show More / Show Less Logic with Animation
+showMoreBtn.addEventListener("click", function() {
+    if (extraContent.style.display === "none" || extraContent.style.opacity === "0") {
+        extraContent.style.display = "block";
+        setTimeout(() => {
+            extraContent.style.opacity = "1";
+            extraContent.style.transform = "translateY(0)";
+        }, 10);
+        showMoreBtn.innerText = "Show Less";
     } else {
-        content.style.display = "none";
-        this.innerText = "Show More";
+        extraContent.style.opacity = "0";
+        extraContent.style.transform = "translateY(-10px)";
+        setTimeout(() => {
+            extraContent.style.display = "none";
+        }, 300);
+        showMoreBtn.innerText = "Show More";
     }
+});
+
+
+let showMoreBtn2 = document.getElementById("prepageShowMoreBtn2");
+let extraContent2 = document.getElementById("prepageExtraContent2");
+
+// Show More / Show Less Logic with Animation
+showMoreBtn2.addEventListener("click", function() {
+    if (extraContent2.style.display === "none" || extraContent2.style.opacity === "0") {
+        extraContent2.style.display = "block";
+        setTimeout(() => {
+            extraContent2.style.opacity = "1";
+            extraContent2.style.transform = "translateY(0)";
+        }, 10);
+        showMoreBtn2.innerText = "Show Less";
+    } else {
+        extraContent2.style.opacity = "0";
+        extraContent2.style.transform = "translateY(-10px)";
+        setTimeout(() => {
+            extraContent2.style.display = "none";
+        }, 300);
+        showMoreBtn2.innerText = "Show More";
+    }
+});*/
+
+let showMoreBtn = document.getElementById("prepageShowMoreBtn");
+let extraContents = document.querySelectorAll(".prepageExtraContent");
+
+// Show More / Show Less Logic with Animation for Multiple Elements
+showMoreBtn.addEventListener("click", function() {
+    let isHidden = extraContents[0].style.display === "none" || extraContents[0].style.opacity === "0";
+
+    extraContents.forEach(content => {
+        if (isHidden) {
+            content.style.display = "block";
+            setTimeout(() => {
+                content.style.opacity = "1";
+                content.style.transform = "translateY(0)";
+            }, 10);
+        } else {
+            content.style.opacity = "0";
+            content.style.transform = "translateY(-10px)";
+            setTimeout(() => {
+                content.style.display = "none";
+            }, 300);
+        }
+    });
+
+    showMoreBtn.innerText = isHidden ? "Show Less" : "Show More";
 });
