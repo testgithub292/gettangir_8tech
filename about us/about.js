@@ -76,7 +76,7 @@
     }
 }
 */
-
+/*
 function toggleContentRoi(event) {
   var content = document.getElementById("hiddenContentRoi");
   var button = document.getElementById("toggleButtonRoi");
@@ -107,7 +107,7 @@ document.addEventListener("click", function () {
 // Prevent hiding when clicking on the content itself
 document.getElementById("hiddenContentRoi").addEventListener("click", function (event) {
   event.stopPropagation();
-});
+});*/
 //-----------------------------------------------------------------------
 /*--------------------------------------------------------------------*/
 
