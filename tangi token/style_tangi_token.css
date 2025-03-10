@@ -986,7 +986,16 @@ h1 {
 
 
 /*------------------------------*/
+#ul {
+  list-style: none; /* Default bullets hata do */
+}
 
+#li::before {
+  content: "✔";  /* Yahan koi bhi custom symbol daal sakte hain */
+  color: green;  /* Bullet color set karein */
+  font-size: 18px;
+  margin-right: 8px;
+}
 /*------------section 3   ----------------------------------------*/
 #section3 {
   font-family: 'Times New Roman', Times, serif;
