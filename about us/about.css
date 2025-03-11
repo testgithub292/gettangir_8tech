@@ -992,3 +992,16 @@ h1 {
 .modern-link:active {
   color: #cc2eb2;
 }
+
+
+/*----------------------------------*/
+#ul {
+  list-style: none; /* Default bullets hata do */
+}
+
+#li::before {
+  content: "✔";  /* Yahan koi bhi custom symbol daal sakte hain */
+  color: green;  /* Bullet color set karein */
+  font-size: 18px;
+  margin-right: 8px;
+}
