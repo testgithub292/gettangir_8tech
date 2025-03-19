@@ -68,6 +68,7 @@
   }
     
   .vertical-hrpre_page3 {
+    margin-left: 70px;
     width: 1px; /* Line ki width (Patli rakhne ke liye) */
     height: 350px; /* Apni zaroorat ke mutabiq adjust karein */
     background-color: white; /* Color */
@@ -146,4 +147,16 @@
         .show-bottom {
             transform: translateY(0);
             opacity: 1;
+        }
+        /*---------------------*/
+
+        #ul {
+          list-style: none; /* Default bullets hata do */
+        }
+        
+        #li::before {
+          content: "✔";  /* Yahan koi bhi custom symbol daal sakte hain */
+          color: green;  /* Bullet color set karein */
+          
+          margin-right: 8px;
         }
