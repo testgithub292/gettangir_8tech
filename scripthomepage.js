@@ -1,4 +1,8 @@
-  // Get the navbar
+         // Check karna ke user ne intro dekha hai ya nahi
+         if (!sessionStorage.getItem("visited")) {
+            window.location.href = "gettangi_prepage.html"; // Agar nahi dekha to intro page par le jao
+        }
+ // Get the navbar
   const navbar = document.querySelector('.navbar');
 
   // Listen for scroll event
