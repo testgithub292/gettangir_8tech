@@ -16,70 +16,92 @@
 </head>
 <body id="prepagemodalbg" style="font-family: 'Times New Roman', Times, serif; background-color: #150d17; color: white;">
     <br>
-    <div class="container">
-        <div class="row w-100 align-items-center">
-            <!-- Left Side Link -->
-            <div class="col-auto">
-                <a href="#">
-                  <img src="images/logo final bg none.png"  class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px">
-                </a>
-            </div>
-            <!-- Center Links (Auto Centered) -->
-            <div class="col d-flex justify-content-center gap-3">
-                <a href="#" class="btnfirstsectionprepage">Join Our PreSale Now</a>
-                <a href="#" class="btnfirstsectionprepage">Join Our Exclusive Investor Club</a>
-                <a href="#" class="btnfirstsectionprepage" onclick="goToMain()">Go To Website</a>
-                <a href="#" class="btnfirstsectionprepage"  onclick="openImage()">Connect With Existing Investors</a>
-            </div>
+   
             <!-- Close Button -->
             <!--div class="col-auto">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </di-->
-        </div>
-        </div>
+            <div class="container" id="prepagebtncontainer">
+              <div class="row w-100 align-items-center fixed-top mt-3">
+                  <div class="col d-flex flex-column align-items-center">
+                      <!-- Logo -->
+                      <a href="#">
+                          <img src="images/logo final bg none.png" class="imagenavfirstlogo" alt="logo-Gettangi.com">
+                      </a>
+                      
+                      <!-- Buttons -->
+                      <div class="btn-container">
+                          <a href="#" class="btnfirstsectionprepage" id="btn1">Join Our PreSale Now</a>
+                          <a href="#" class="btnfirstsectionprepage" id="btn2">Join Our Exclusive Investor Club</a>
+                          <a href="#" class="btnfirstsectionprepage" id="btn3" onclick="goToMain()">Go To Website</a>
+                          <a href="https://t.me/GetTangiToken" target="_blank" class="btnfirstsectionprepage" id="btn4" onclick="openImage()">Connect With Existing Investors</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        <!--div class="container">
+          <div class="row w-100 align-items-center fixed-top mt-3">
+              <div class="col d-flex flex-column align-items-center">
+                  <!-- Logo >
+                  <div class="col-auto">
+                  <a href="#">
+                      <img src="images/logo final bg none.png" class="imagenavfirstlogo" alt="logo-Gettangi.com">
+                  </a>
+                  </div>
+                  <!-- Buttons ->
+                  <div class="btn-container">
+                    <a href="#" class="btnfirstsectionprepage" id="btn1">Join Our PreSale Now</a>
+                      <a href="#" class="btnfirstsectionprepage" id="btn2">Join Our Exclusive Investor Club</a>
+                      <a href="#" class="btnfirstsectionprepage" id="btn3" onclick="goToMain()">Go To Website</a>
+                      <a href="#" class="btnfirstsectionprepage" id="btn4" onclick="openImage()">Connect With Existing Investors</a>
+                  </div>
+              </div>
+          </div>
+      </div-->
+      
 
 
-        <div class="container">
+        <div class="container" id="prepagefirstsection">
 
            
-            
+             
             <br>
-            <div class="row">
-              <h3 style="color:#5737c4; font-weight: bold; font-size: 45px;">Our PrePage </h3>
+            <div class="row" id="sectionrow">
+              <h3 id="sectionheading">Our PrePage </h3>
               <p style="color: #cc2eb2;">The Broad Strokes</p>
-              <br>
-              <br>
-              <br>
-              <p class="animate-p">At Tangi, we provide banking and payment processing solutions to industries that have been overlooked by major banks and card networks. Our latest breakthrough?</p>
-              <div class="col-7 animate-left">
+             
+              
+              <p class="animate-p" style="margin-top: 20px;">At Tangi, we provide banking and payment processing solutions to industries that have been overlooked by major banks and card networks. Our latest breakthrough?</p>
+              <div class="col-7 animate-left" id="sectioncol1">
                 
               <p class="fade-text">  A fully compliant, bank-backed payment system built for the $33 billion legal cannabis market, where traditional banking has failed.
                
                 </p>
                 <p class="fade-text"> Despite its massive size, Visa, Mastercard, and major banks refuse to service the industry, forcing businesses and consumers into a cash-only system—until now.</p>
               </div>
-              <div class="col-5  animate-right" style="text-align: center;">
-                <video style="border-radius: 10px;" class="fade-text"  src="pre page video.mp4" width="75%"  controls poster="images/brian-cown-thub nail first video .png"></video>
+              <div class="col-5  animate-right" id="sectioncol2" style="text-align: center;">
+                <video style="border-radius: 10px;" class="fade-text"  src="pre page video.mp4" width="75%" id="prepagefirstvideo"  controls poster="images/brian-cown-thub nail first video .png"></video>
               </div>
               <p class="animate-p">Our token-powered solution seamlessly integrates into an industry desperate for digital payments, creating a first-mover advantage for investors at the foundation of an essential, high-demand financial network.</p>
             </div>
             <br>
-            <h3 style="color: #5737c4; font-weight: bold; font-size: 45px;" class="animate-bottom">The Problem </h3>
+            <h3 id="sectionheading" class="animate-bottom">The Problem </h3>
             <p style="color: #cc2eb2;" class="animate-bottom">A Cash-Only Industry Desperate for Change</p>
             <br>
             <p class="animate-bottom">The legal cannabis industry generates $33 billion in annual retail sales, yet it remains trapped in an outdated, cash-only system. Why? Because payment providers lack the essential banking partnership needed to offer legal, compliant payments in the cannabis sector. </p>
             <p class="animate-bottom">Without it, they cannot securely process, store, or settle funds from cannabis transactions within the regulated financial system—leaving 8000 retailers and 60 million consumers without a viable digital payment option.</p>
           <p class="animate-bottom">  For retailers, cash isn’t just inconvenient—it’s a security risk, a compliance nightmare, and a barrier to growth for businesses generating upwards of $1M per month. A solution isn’t just wanted—it’s urgently needed.</p>   
             <br>
-            <div class="row" style="text-align: justify;">
+            <div class="row" style="text-align: justify;" id="sectionrow">
 
-            <h3 style="color: #5737c4; font-weight: bold; font-size: 45px;"> The Breakthrough</h3>
+            <h3 id="sectionheading"> The Breakthrough</h3>
             <p style="color: #cc2eb2;">The Banking Partnership No One Else Has</p>
             <br>
             <br>
             <br>
             <p class="animate-p">Where others have failed, we succeeded. We have secured a banking relationship with a forward-thinking bank that shares our vision of providing compliant banking and payment services to the cannabis industry. This positions us as the only provider capable of delivering a sustainable payment solution to an industry desperate for one.</p>
-              <div class="col animate-left">
+              <div class="col animate-left"  id="sectioncol1">
               
 
                
@@ -87,7 +109,7 @@
               
             </div>
             
-            <div class="col animate-right">
+            <div class="col animate-right" id="sectioncol2">
               
               
               <img src="images/invester hub page image 5.png" width="100%" height="300px" style="border-radius: 15px" alt="">
@@ -97,21 +119,19 @@
             </div>
 
             <br>
-            <div class="container">
-              <div class="row" style="text-align: justify;">
-                <h3 style="color: #5737c4; font-weight: bold; font-size: 45px;" class="animate-bottom">The Token-Powered Solution</h3>
+            <div class="">
+              <div class="row" style="text-align: justify;" id="sectionrow">
+                <h3 id="sectionheading" class="animate-bottom">The Token-Powered Solution</h3>
                 <p style="color: #cc2eb2;" class="animate-bottom">Built-In Demand</p>
-                <div class="col-6 animate-bottom" style="padding-right: 50px;">
+                <div class="col-6 animate-bottom" style="padding-right: 50px;" id="sectioncol1">
                   <br>
                   <p>Our token payment platform gives retailers a turnkey digital payment system with lower fees, full compliance, and secure banking. It eliminates the risks and inefficiencies of cash handling, while the token rewards program strengthens customer loyalty and boosts retention for retailers.</p>
                  <p>Consumers benefit from an elite-style incentive and reward structure for using the token over cash, including discounts, bonuses, free purchases, and exclusive perks. This promotes continuous usage, retailer preference, and automatic adoption.</p>
                   
                   
                   </div>
-                  <!--div class="col">
-                  <hr class="vertical-hrpre_page">
-                  </div-->
-                  <div class="col-6 animate-bottom">
+                  
+                  <div class="col-6 animate-bottom" id="sectioncol2">
                     <br>
                     <img src="images/invester hub page image 4.png" width="100%" height="400px" style="border-radius: 15px;" alt="">
                     
@@ -120,14 +140,14 @@
                 </p>
               </div>
               <br>
-              <div class="row">
-                <h3 style="color: #5737c4; font-weight: bold; font-size: 45px;">Adoption & Investor Advantage</h3>
+              <div class="row" id="sectionrow">
+                <h3 id="sectionheading">Adoption & Investor Advantage</h3>
                 <p style="color: #cc2eb2;">The Perfect Demand Cycle</p>
                 <br>
                 <br>
                 <br>
                 <p class="animate-p">We control the initial rollout by launching within a closed-loop system, where 60 million repeat users purchase their tokens automatically through auto-renewal and replenishment.</p>
-                <div class="col animate-left">
+                <div class="col animate-left" id="sectioncol1">
                   
                <p>They never have to buy tokens manually, worry about running out, or face any barriers to in-store payments—we’ve eliminated every hurdle. Like a seamless monthly subscription, their wallets auto-replenish weekly, ensuring frictionless, uninterrupted access to tokens at all times.</p>
                 <p> Adoption isn’t a question—it’s built in.
@@ -135,7 +155,7 @@
                   </p>
                   
                 </div>
-                <div class="col animate-right">
+                <div class="col animate-right" id="sectioncol2">
                   <br>
                   <img src="images/invester hub page image 7.png" width="100%" height="400px" style="border-radius: 15px;" alt="">
                   
@@ -144,28 +164,21 @@
               </div>
             
             </div>
-<br>
-
-<div class="container">
+<br> 
+ 
+<div class="">
   <div style=" color: #5737c4;">
-    <h1 style="font-size: 45px; font-weight: bold;" class="animate-bottom">The Public Listing </h1>
+    <h1 id="sectionheading"  class="animate-bottom">The Public Listing </h1>
     <p style="color: #cc2eb2;" class="animate-bottom">Where Everything Converges </p>
   </div>
- 
-  <p class="animate-bottom">
-    Our public listing will closely follow the conclusion of our PreSale, strategically aligning with the rollout of our services to the legal cannabis industry.</p>
+  <p class="animate-bottom">Our public listing will closely follow the conclusion of our PreSale, strategically aligning with the rollout of our services to the legal cannabis industry.</p>
+  
 </div>
 
-<br>
-
-
-
-
-          <br>
-  <div class="container">
-          <div class="row" style="text-align: justify;">
-            <div class="col-8 animate-left" style="padding-right: 50px;">
-              <h5 style="color: #5737c4; font-weight: bold; font-size: 40px; " class="priofirstheadin"> Presale Investors Control Supply</h5>
+  <div class="">
+          <div class="row" style="text-align: justify;" id="sectionrow">
+            <div class="col-8 animate-left" style="padding-right: 50px;" id="sectioncol1">
+              <h5 id="sectionheading" style="color: #5737c4; font-weight: bold; font-size: 40px; " class="priofirstheadin"> Presale Investors Control Supply</h5>
               <p style="color: #cc2eb2; margin-left: 0px;">Demand Will Drive the Value</p>
               
               <br>
@@ -179,8 +192,8 @@
               <p>As a Round 2 investor, you’re in a prime position to capitalize on continuous demand—whether selling to incoming investors at listing or holding as mass adoption accelerates.</p>
       
             </div>
-            <div class="col-4 animate-right">
-              <h5 style="color: #5737c4; font-weight: bold; font-size: 40px;">  Potential Token Value  </h5>
+            <div class="col-4 animate-right" id="sectioncolPotentialTokenValue">
+              <h5 id="sectionheading" style="color: #5737c4; font-weight: bold; font-size: 40px;">  Potential Token Value  </h5>
               <p style="color: #cc2eb2;">The Numbers Speak for Themselves</p>
              
               <br>
@@ -198,15 +211,15 @@
         </div>
           
        
-          <br>
+       <br>
 
           <div style="text-align: center; color: #5737c4; font-weight: bold;">
-            <p style="font-size: 45px;">Summary </p>
+            <p id="sectionheading">Summary </p>
 
           </div>
           
-          <div class="row">
-            <div class="col-5 animate-left">
+          <div class="row" id="sectionrow">
+            <div class="col-5 animate-left" id="sectioncol1">
               <ul>
                 <li> A real-world utility token backed by compliance and actual demand, not hype or speculation.   </li>
                 <li>Solving a $33B industry problem by providing the first compliant payment solution for cannabis retailers. </li>
@@ -225,8 +238,9 @@
             </div>
             <div class="col-1">
               <hr class="vertical-hrpre_page3">
+              <hr class="prepagelastsection_hr">
             </div>
-            <div class="col-6 animate-right">
+            <div class="col-6 animate-right" id="sectioncolPotentialTokenValue">
               <ul>
                 <li>Limited token supply, controlled by presale investors when listed, ensuring strong demand.    </li>
                 <li>2,500 early investors already secured their position in Round 1.                </li>
@@ -243,9 +257,11 @@
               <br>
             </div>
           </div>
-          <br>
-
           
+
+          <div style="text-align: center;">
+            <p>Below you will find a number of options to choose from. Thank you for considering our project.</p>
+          </div>
 
           <!--div style="text-align: center;">
 
@@ -351,96 +367,37 @@
             </div>
           </div-->
 
-          <div style="text-align: center;" class="animate-bottom">
-            <p>Below you will find a number of options to choose from. Thank you for considering our project.</p>
+      
 
-          </div>
-
-         
-
-          <br>
+   
      
-          <div class="container">
-            <div class="row w-100 align-items-center">
-                <!-- Left Side Link -->
-                <div class="col-auto">
-                    <a href="#">
-                      <img src="images/logo final bg none.png"  id="myImage" class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px">
-                    </a>
-                </div>
-                <!-- Center Links (Auto Centered) -->
-                <div class="col d-flex justify-content-center gap-3">
-                    <a href="#" class="btnfirstsectionprepage">Join Our PreSale Now</a>
-                    <a href="#" class="btnfirstsectionprepage">Join Our Exclusive Investor Club</a>
-                    <a href="#" class="btnfirstsectionprepage" onclick="goToMain()">Go To Website</a>
-                    <a href="#" class="btnfirstsectionprepage" onclick="openImage()">Connect With Existing Investors</a>
-                </div>
-                <!-- Close Button -->
-                <!--div class="col-auto">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </di-->
-            </div>
-            </div>
+     <br>
+     
 
         </div>
-      </div>
-      <br>
+      
+      
 
     
  
 
-<script>
-    function goToMain() {
-        sessionStorage.setItem("visited", "true"); // Mark karein ke user ne page dekha hai
-        window.location.href = "index.html"; // Main page per redirect kar do
-    }
-
-    /*-----------------------------------------*/
- // Function to detect when elements come into view
- function animateOnScroll(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            } else {
-                entry.target.classList.remove("show"); // Reset animation when out of view
-            }
-        });
-    }
-
-    // Create observer
-    const observer = new IntersectionObserver(animateOnScroll, {
-        root: null,
-        threshold: 0.2 // Trigger when 20% of the element is visible
-    });
-
-    // Observe all elements that need animation
-    document.querySelectorAll(".animate-left, .animate-right, .animate-p").forEach(element => {
-        observer.observe(element);
-    });
-    /*---------------------------------------------*/
-// Function to detect when elements come into view
-function animateBottomOnScroll(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show-bottom");
-        } else {
-            entry.target.classList.remove("show-bottom"); // Reset animation when out of view
-        }
-    });
-}
-
-// Create observer
-const bottomObserver = new IntersectionObserver(animateBottomOnScroll, {
-    root: null,
-    threshold: 0.2
-});
-
-// Observe all elements with .animate-bottom class
-document.querySelectorAll(".animate-bottom").forEach(element => {
-    bottomObserver.observe(element);
-});
+<script src="prepage.js">
 
 </script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67acb1c53a842732607dd99a/1ijt9cqvv';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>

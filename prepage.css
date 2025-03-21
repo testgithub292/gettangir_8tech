@@ -1,23 +1,3 @@
-.btnfirstsectionprepage {
-    display: inline-block;
-    background: #f8f8f8; /* Default background color */
-    color: #cc2eb2; /* Default text color */
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 50px;
-    margin-top: 10px;
-    border: 2px solid #cc2eb2; /* Border to match hover effect */
-    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
-  
-      position: relative;
-      z-index: 1;
-  }
-  
-  .btnfirstsectionprepage:hover {
-    background: #cc2eb2 !important; /* Hover background color */
-    color: white; /* Hover text color */
-  }
 
   
 
@@ -73,7 +53,7 @@
     height: 350px; /* Apni zaroorat ke mutabiq adjust karein */
     background-color: white; /* Color */
     border: none; /* Default border remove */
-    transform: rotate(0deg); /* 90 degrees rotate */
+    transform: rotate(0deg); /* 90 degrees  rotate */
     display: inline-block;
   }
 
@@ -103,47 +83,78 @@
         .show {
             transform: translateX(0);
         }*/
-        /* Column animations */
-           /* Left Column & P Tags Animation */
+
+        /*-----real*/
+        /*
            .animate-left {
             opacity: 0;
             transform: translateX(-120px);
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
 
-        /* Right Column Animation */
+        
         .animate-right {
             opacity: 0;
             transform: translateX(120px);
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
 
-        /* All P Tags - Same Animation as Left Column */
+       
         .animate-p {
             opacity: 0;
             transform: translateX(-120px);
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
 
-        /* Show Class for Smooth Entry */
         .show {
             transform: translateX(0);
             opacity: 1;
-        }
+        }*/
 
-        body {
-            overflow-x: hidden; /* Hide Horizontal Scroll */
-        }
+     
+      
+      .container {
+          position: relative;
+          width: 100%;
+          overflow: hidden; /* Yeh ensure karega ke content bahar na jaye */
+      }
+      
+      .animate-left, .animate-right, .animate-p {
+          opacity: 0;
+          transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+      }
+      
+      .animate-left {
+          transform: translateX(-100px); /* -120px se thoda kam rakha */
+      }
+      
+      .animate-right {
+          transform: translateX(100px);
+      }
+      
+      .animate-p {
+          transform: translateX(-100px);
+      }
+      
+      .show {
+          transform: translateX(0);
+          opacity: 1;
+      }
+      
 
+      /*  body {
+            overflow-x: hidden; /* Hide Horizontal Scroll 
+        }*/
+ 
 
         /*------------------------------*/
         .animate-bottom {
             opacity: 0.3;
-            transform: translateY(100px); /* Niche se upar aayega */
+            transform: translateY(100px); 
             transition: transform 1.2s ease-out, opacity 1.2s ease-out;
         }
         
-        /* Jab Element View Me Aaye */
+       
         .show-bottom {
             transform: translateY(0);
             opacity: 1;
@@ -160,3 +171,303 @@
           
           margin-right: 8px;
         }
+        
+        .prepagelastsection_hr{
+          display: none;
+        }
+
+        /*--------------------*/
+
+        @media (max-width: 1300px) {
+          #prepagefirstvideo{
+            height: 100%;
+          }
+
+          #sectioncol2{
+           display: flex;
+           align-items: center;
+            
+          }
+          #prepagefirstsection{
+            margin-top: 200px !important;
+          }
+        }
+
+      
+
+        @media (max-width: 1000px) {
+         
+
+          .btnfirstsectionprepage {
+            display: inline-block;
+            background: #f8f8f8; /* Default background color */
+            color: #cc2eb2; /* Default text color */
+            padding: 5px 5px;
+            font-size: 0.9rem;
+          
+           
+          }
+         
+        }
+        @media (max-width: 992px) {
+          #sectionrow{
+            display: block;
+          }
+          #sectioncol1{
+            width: 100%;
+          }
+
+          #sectioncol2{
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          #sectioncolPotentialTokenValue{
+            margin-top: 40px;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          #prepagefirstvideo{
+            width: 100%;
+            height: 100%;
+          }
+          .vertical-hrpre_page3{
+           display: none;
+          }
+
+         .prepagelastsection_hr{
+          display: block;
+          width: 700px;
+          border: 1.5px solid;
+          margin-top: 40px;
+         }
+
+        }
+
+       
+       
+
+        #prepagefirstsection{
+          margin-top: 100px;
+        }
+
+        @media (max-width: 800px) {
+  
+          .prepagelastsection_hr{
+            width: 600px;
+            border: 1.5px solid;
+            margin-top: 40px;
+           }
+          }
+
+          
+        @media (max-width: 750px) {
+  
+          .prepagelastsection_hr{
+            width: 500px;
+            border: 1.5px solid;
+            margin-top: 40px;
+           }
+          }
+
+          @media (max-width: 550px) {
+  
+            .prepagelastsection_hr{
+              width: 400px;
+              border: 1.5px solid;
+              margin-top: 40px;
+             }
+             #prepagefirstsection{
+              margin-top: 150px !important;
+            }
+            }
+
+            
+          @media (max-width: 450px) {
+  
+            .prepagelastsection_hr{
+              width: 350px;
+              border: 1.5px solid;
+              margin-top: 40px;
+             }
+            }
+
+            @media (max-width: 400px) {
+  
+              .prepagelastsection_hr{
+                width: 300px;
+                border: 1.5px solid;
+                margin-top: 40px;
+               }
+              }
+
+              @media (max-width: 380px) {
+  
+                .prepagelastsection_hr{
+                  width: 250px;
+                  border: 1.5px solid;
+                  margin-top: 40px;
+                 }
+                 
+                }
+
+
+
+              
+.btnfirstsectionprepage {
+  display: inline-block;
+  background: #f8f8f8; 
+  color: #cc2eb2; 
+  padding: 5px 10px; 
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #cc2eb2; 
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.btnfirstsectionprepage:hover {
+  background: #cc2eb2 !important; 
+  color: white; 
+}
+
+
+.col.d-flex {
+  
+  gap: 15px;
+  
+}
+.imagenavfirstlogo {
+  max-width: 170px;
+  height: auto;
+}
+
+
+@media (max-width: 1200px) {
+  .col.d-flex {
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 5px;
+      
+  }
+
+  .imagenavfirstlogo {
+      max-width: 150px; 
+      display: block;
+      margin: 0 auto 0px auto;
+  }
+
+  
+  .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+  }
+
+  .btn-container a {
+      width: 40%; 
+      text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .btnfirstsectionprepage {
+    display: inline-block;
+    background: #f8f8f8; 
+    color: #cc2eb2; 
+    padding: 5px 5px !important; 
+    font-size: 1rem !important;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #cc2eb2; 
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    text-align: center !important;
+    white-space: nowrap;
+    width: 100%;
+  }
+  #prepagebtncontainer{
+    display:flexbox;
+  }
+}
+
+
+
+
+.modern-link {
+  text-decoration: none;
+  color: #cc2eb2;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  margin-bottom: 10px; /* Add bottom margin to separate the links */
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.modern-link:hover {
+  color: #cc2eb2;
+  transform: scale(1.1);
+}
+
+.modern-link:active {
+  color: #cc2eb2;
+}
+
+
+/*-----------------heading size------------------*/
+#sectionheading{
+  font-size: 45px;
+  font-weight: bold;
+  color: #5737c4;
+}
+
+@media (max-width: 550px) {
+  #sectionheading{
+    font-size: 35px !important;
+    font-weight: bold;
+    color: #5737c4;
+  }
+  #prepagemodalbg p {
+    font-size: 25px !important;
+  }
+
+  #prepagemodalbg li {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #sectionheading{
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #5737c4;
+  }
+  #prepagemodalbg p {
+    font-size: 20px !important;
+  }
+
+  #prepagemodalbg li {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  #sectionheading{
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #5737c4;
+  }
+  
+  #prepagemodalbg p {
+    font-size: 18px !important;
+  }
+
+  #prepagemodalbg li {
+    font-size: 18px !important;
+  }
+}
