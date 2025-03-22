@@ -953,9 +953,28 @@ h1 {
   font-size: 35px;
   color:#5737c4;
   font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
+.priofirstheadin2{
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
 
+body p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+body li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+body h1{
+  font-family: 'Times New Roman', Times, serif;
+
+}
 /*----------------------------------------------*/
 
 #hiddenContentRoi {
@@ -1024,7 +1043,7 @@ h1 {
 
  
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 
 .priofirstheadin{
   font-size: 25px;

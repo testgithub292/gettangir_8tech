@@ -239,7 +239,22 @@ background-color: whitesmoke;
 
 /*-------------------------------------------*/
 
+body p{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
+body li{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+body h1{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
 
 .hero_firstsection {
   position: relative;
@@ -247,7 +262,7 @@ background-color: whitesmoke;
   height: 100vh;
   background: url('images/get8tech\ main\ pic2.png') no-repeat center center/cover;
   display: flex;
-  
+  font-family: 'Times New Roman', Times, serif;
   padding-left: 5%;
   color: white;
 }
@@ -279,7 +294,7 @@ margin-top: 130px;
   font-size: 25px;
 }
 
-
+ 
 
 .content_firstsection p {
   font-size: 1.2rem;
@@ -352,9 +367,18 @@ margin-top: 130px;
       justify-content: center;
   }
 
+  body h1{
+    font-size: 25px !important;
+    font-family: 'Times New Roman', Times, serif;
   
+  }
+
+  .fourthsectionheading{
+    font-size: 25px !important;
+    font-family: 'Times New Roman', Times, serif;
+  }
   .content_firstsection h1 {
-      font-size: 2rem;
+      font-size: 25px !important;
   }
   .content_firstsection p {
       font-size: 1rem;
@@ -807,7 +831,7 @@ margin-top: 130px;
 
 @media (max-width:  660px) {
   .fivesectionheading{
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -866,7 +890,7 @@ margin-top: 130px;
   }
   .sevensectionhead{
     color: #5737c4;
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 }
 
@@ -876,7 +900,7 @@ margin-top: 130px;
   }
   .sevensectionhead{
     color: #5737c4;
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
   #sixsectioncardheading{
     margin-top: 50px;
@@ -889,7 +913,7 @@ margin-top: 130px;
   }
   .sevensectionhead{
     color: #5737c4;
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
   #sixsectioncardheading{
@@ -901,7 +925,7 @@ margin-top: 130px;
 
 .sevensectionhead{
   color: #5737c4;
-  font-size: 30px;
+  font-size: 35x;
 }
 
 
@@ -1295,7 +1319,7 @@ margin-top: 130px;
   margin-bottom: 10px; /* Add bottom margin to separate the links */
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
-  padding-left: 5px;
+ 
   cursor: pointer;
 }
 
@@ -1784,7 +1808,7 @@ margin-top: 130px;
   /*------------------------------*/
   .animate-bottom {
       opacity: 0.3;
-      transform: translateY(100px); 
+      transform: translateY(50px); 
       transition: transform 1.2s ease-out, opacity 1.2s ease-out;
   }
   

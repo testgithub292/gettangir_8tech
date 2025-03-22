@@ -1255,16 +1255,24 @@ h2 {
 }
 
 #fistsectioncolimage{
+  margin-bottom: 10px;
   width: 100%;
  }
 
 }
 
-p{
-  font-size: 18px;
+body p {
+  font-size: 18px !important;
+  font-family: 'Times New Roman', Times, serif;
 }
-li{
-  font-size: 18px;
+body li {
+  font-size: 18px !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body h1 {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
 }
 /*===================================================*/
 /* Button Styling */
