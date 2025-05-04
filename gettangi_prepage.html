@@ -584,130 +584,18 @@
 
     
  <br>
-
-<!-- Tawk API script -->
-<script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/67e8009179e564190eaee95a/1inh44e9s';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-
-  // Show toast with animation
-  function showToast(id) {
-    const toast = document.getElementById(id);
-    toast.classList.add('show');
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 3000);
-  }
-
-  function showErrorToast(message) {
-    const toast = document.getElementById('errorToast');
-    if (toast) {
-      toast.innerText = message || "An error occurred";
-      showToast('errorToast');
-    }
-  }
-
-  function showSuccessToast() {
-    showToast('successToast');
-  }
-
-  // ✅ Email format validator
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  // Function to send email and accepted terms event to Tawk
-  function notifyTawkAfterModalClose() {
-    const userEmail = document.getElementById('userEmail').value;
-    const checkbox = document.getElementById('agreeCheckbox');
-
-    if (!checkbox.checked) {
-      showErrorToast("You must accept the terms and conditions.");
-      return;
-    }
-
-    setTimeout(() => {
-      if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.addEvent === 'function') {
-        Tawk_API.addEvent("AcceptedTerms", {
-          message: userEmail
-            ? "User accepted terms and provided email: " + userEmail
-            : "User accepted terms without email."
-        });
-        console.log("✅ Tawk.to AcceptedTerms event sent");
-      } else {
-        console.warn("❌ Tawk_API not ready at event send time.");
-      }
-    }, 1000);
-  }
-
-  // Modal close logic (email optional but must be valid if provided)
-  function tryCloseModal() {
-    const checkbox = document.getElementById('agreeCheckbox');
-    const userEmail = document.getElementById('userEmail').value;
-
-    if (!checkbox.checked) {
-      showErrorToast("⚠️ You must accept the terms and conditions.");
-      return;
-    }
-
-    // ✅ Only check email if not empty
-    if (userEmail && !isValidEmail(userEmail)) {
-      showErrorToast("⚠️ Invalid email format.");
-      return;
-    }
-
-    myModal.hide();
-    setTimeout(() => {
-      showSuccessToast();
-      enableButtonsAfterModal();
-    }, 500);
-
-    notifyTawkAfterModalClose();
-  }
-
-  // Modal open logic
-  let myModal;
-  window.onload = function () {
-    myModal = new bootstrap.Modal(document.getElementById('myModal'), {
-      backdrop: 'static',
-      keyboard: false
-    });
-    myModal.show();
-  };
-
-  // Disable all target buttons initially
-  const btnIds = ['btn1', 'btn2', 'btn3', 'btn4'];
-  btnIds.forEach(id => {
-    const btn = document.getElementById(id);
-    if (btn) {
-      btn.classList.add('disabled');
-      btn.style.pointerEvents = 'none';
-      btn.style.opacity = '0.5';
-    }
-  });
-
-  function enableButtonsAfterModal() {
-    btnIds.forEach(id => {
-      const btn = document.getElementById(id);
-      if (btn) {
-        btn.classList.remove('disabled');
-        btn.style.pointerEvents = 'auto';
-        btn.style.opacity = '1';
-      }
-    });
-  }
-
-  document.getElementById('modalCloseBtn').addEventListener('click', tryCloseModal);
-  document.getElementById('acceptBtn').addEventListener('click', tryCloseModal);
-</script>
-
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/67acb1c53a842732607dd99a/1ijt9cqvv';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
 
  
  <!-- Tawk API script -->
